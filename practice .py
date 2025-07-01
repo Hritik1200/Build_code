@@ -50,7 +50,7 @@ if inp_pass != passw:
                 1. ) Guido van Rossum
                 2. ) James Gosling
                 3. ) Dennis Ritchie
-                4. ) Bjarne Stroustrupnswer 2''')
+                4. ) Bjarne Stroustrup''')
             ans1 = int(input("enter ans :"))
             if ans1 == 2:
                 print("right answer")
@@ -69,10 +69,10 @@ if inp_pass != passw:
     else:
         print("right password 2")
         print('''1. Who invented Java Programming?
-   1. ) Guido van Rossum
-   2. ) James Gosling
-   3. ) Dennis Ritchie
-   4. ) Bjarne Stroustrupnswer 2''')
+         1. ) Guido van Rossum
+         2. ) James Gosling
+         3. ) Dennis Ritchie
+         4. ) Bjarne Stroustrup''')
         ans1 = int(input("enter ans :"))
         if ans1 == 2:
             print("right answer")
@@ -91,10 +91,10 @@ if inp_pass != passw:
 else:
     print("right password")
     print('''1. Who invented Java Programming?
-   1. ) Guido van Rossum
-   2. ) James Gosling
-   3. ) Dennis Ritchie
-   4. ) Bjarne Stroustrupnswer 2''')
+      1. ) Guido van Rossum
+      2. ) James Gosling
+      3. ) Dennis Ritchie
+      4. ) Bjarne Stroustrup''')
     ans1 = int(input("enter ans :"))
     if ans1 == 2:
             print("right answer")
