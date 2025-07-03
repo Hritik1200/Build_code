@@ -51,7 +51,7 @@ else:
 
 total = (java+c+python+go+ML+DSA)
 print("Total = ",total)
-per = round((java+c+python+go+ML+DSA)/400*100,2)
+per = round((java+c+python+go+ML+DSA)/600*100,2)
 print("per = ",per,"%")
 
 if per >=95 and per<=100:
