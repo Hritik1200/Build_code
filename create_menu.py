@@ -28,10 +28,24 @@
 
 inp_range = int(input("enter range : "))
 menu_w_price = []
-
+total = 0
 for i in range(inp_range):
     item = input(f"enter item {i+1}: ")
     price = int(input(f"enter price {i+1}: "))
+    total = total+price
     menu = (f"{item} = {price}")
     menu_w_price.append(menu)
 print(menu_w_price)
+
+print("Do You Want to add GST [Y/N]")
+gst_inp = input("enter yes or no : ")
+print(gst_inp)
+a = "yes"
+if gst_inp == a:
+    print(f"Total = {total}")
+    print("GST = 18%")
+    Final = ((total *18)/100)
+    print(f"Final Total = {Final+total}")
+else:
+    print(menu_w_price)
+    print(f"Total = {total}")
