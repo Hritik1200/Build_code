@@ -30,8 +30,8 @@ inp_range = int(input("enter range : "))
 menu_w_price = []
 
 for i in range(inp_range):
-    item = input("enter item : ")
-    price = int(input("enter price : "))
+    item = input(f"enter item {i+1}: ")
+    price = int(input(f"enter price {i+1}: "))
     menu = (f"{item} = {price}")
     menu_w_price.append(menu)
 print(menu_w_price)
