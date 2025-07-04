@@ -32,6 +32,6 @@ menu_w_price = []
 for i in range(inp_range):
     item = input("enter item : ")
     price = int(input("enter price : "))
-    menu = [f"{item} = {price}"]
+    menu = (f"{item} = {price}")
     menu_w_price.append(menu)
 print(menu_w_price)
