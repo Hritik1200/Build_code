@@ -26,6 +26,22 @@
 # fafda = 100
 # jalebi = 200
 
+# Do You Want to add GST [Y/N]
+# [note : if user select `N` Print bill without GST]
+# [Note User select yes `Y`]
+# Enter GST % = 18
+# -------Out put -------
+
+# 1. Samosa = 300/-
+# 2. Kachori = 100/-
+# 3. Fafda = 100/-
+# 4. Jalebi = 200/-
+# -------------------
+# Total = 700
+# GST = 18%
+# -------------------
+# Final Total = 826/-
+
 inp_range = int(input("enter range : "))
 menu_w_price = []
 total = 0
@@ -35,17 +51,25 @@ for i in range(inp_range):
     total = total+price
     menu = (f"{item} = {price}")
     menu_w_price.append(menu)
-print(menu_w_price)
+# for a in menu_w_price: # if want to stop code till here and print output
+#     print(a)
 
 print("Do You Want to add GST [Y/N]")
 gst_inp = input("enter yes or no : ")
 print(gst_inp)
 a = "yes"
+
 if gst_inp == a:
+    for a in menu_w_price:
+        print(a)
     print(f"Total = {total}")
     print("GST = 18%")
     Final = ((total *18)/100)
     print(f"Final Total = {Final+total}")
 else:
-    print(menu_w_price)
+    for a in menu_w_price:
+        print(a)
     print(f"Total = {total}")
+
+# print(menu_w_price)  
+# if wanted to print list
