@@ -10,7 +10,7 @@ class Bank:
 
     def credit_amt(self, cre_amt):
         self.cre_amt1 = cre_amt  # we can change name varaible eg: self.cre_amt1
-        print("Credit Limit:", cre_amt)
+        print("Amount Credited:", cre_amt)
 
     def withdrawal(self, withd):
         self.withd = withd
@@ -28,6 +28,24 @@ bank1.credit_amt(2000)
 bank1.withdrawal(1500)
 bank1.aft_wid()
 
+# class using constructor __init__
+class Bank:
+    def __init__(self,amount,credit,withdrawal):
+        self.amount = amount
+        self.credit = credit
+        self.withdrawal = withdrawal
+    def Amount1(self):
+        print("Amount:", self.amount)
+
+    def credit_amt1(self):
+        print("Amount Credited:", self.credit)
+
+    def withdrawal1(self):
+        print("Withdrawal Amount:", self.withdrawal)
+
+    def aft_wid(self):
+        total = (self.amount + self.credit) - self.withdrawal
+        print("Balance After Withdrawal:", total)
 
 # 2. we can use any name other than self eg:
 # in this mehod i have used name a as bridge
@@ -39,7 +57,7 @@ class Bank:
 
     def cre_amt1(a,cre):
         a.cre2 = cre
-        print("Credit Limit =",cre)
+        print("Amount Credited =",cre)
 
     def withdrawal1(a,with1):
         a.with2 = with1
@@ -72,7 +90,7 @@ class Bank:
     def credit_l(cre):
         global Credit1
         Credit1 = cre
-        print("Credit Limit :",cre)
+        print(" Amount Credited :",cre)
     def withdrawal(withd):
         global Withd1
         Withd1 = withd
