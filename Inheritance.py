@@ -18,7 +18,7 @@ class Creditc2(Creditc1):
         Limit2 = limit2
         print("Credit card Name : SBI =",limit2)
 
-class Credit_limit(Creditc2,Creditc1):
+class Credit_limit(Creditc2):
     def All_info():
         print("Total Credit Limit ",Limit1 +Limit2)
 
