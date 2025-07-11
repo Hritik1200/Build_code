@@ -40,19 +40,21 @@ class Bank(customer):
         print("Card Type:",card_type,"Card Number:",card_number)
 
 class Creditc1(Bank):
-    def card1(tran1,limit1,tran2,limit2):
+    def card1(tran1,limit1):
         global Limit1
         Limit1 = limit1
+        print("Transaction ID:",tran1," Amount:",limit1)
+    def card2(tran2,limit2):
         global Limit2
         Limit2 = limit2
-        print("Transaction ID:",tran1," Amount:",limit1)
         print("Transaction ID:",tran2,"Amount:",limit2)
 
 class Bank1(Creditc1):
-    def bank_AC1(card_type1,card_number1,tran3,limit3):
+    def bank_AC1(card_type1,card_number1):
+        print("Card Type:",card_type1,"Card Number:",card_number1)
+    def card3(tran3,limit3):
         global Limit3
         Limit3 = limit3
-        print("Card Type:",card_type1,"Card Number:",card_number1)
         print("Transaction ID:",tran3,"Amount:",limit3)
 
 class Credit_limit(Bank1):
@@ -62,7 +64,9 @@ class Credit_limit(Bank1):
 a = Credit_limit
 a.info(input("Customer id"),input("Enter name"))
 a.bank_AC(input("Enter card type"),input("Enter card No"))
-a.card1(input("Enter Transaction ID1:"),int(input("enter limit1")),input("Enter Transaction ID2:"),int(input("enter limit2")))
-a.bank_AC1(input("Enter card type"),input("Enter card No"),input("Enter Transaction ID3:"),int(input("enter limit3")))
+a.card1(input("Enter Transaction ID1:"),int(input("enter limit1")))
+a.card2(input("Enter Transaction ID2:"),int(input("enter limit2")))
+a.bank_AC1(input("Enter card type"),input("Enter card No"))
+a.card3(input("Enter Transaction ID3:"),int(input("enter limit3")))
 a.All_info()
 
