@@ -25,6 +25,14 @@ class Credit_limit(Bank1):
     def All_info():
         print("Total Transaction Amount:",Limit1)
 
+
+a = Credit_limit
+a.info(123,"Hritik")
+a.bank_AC("Visa",880567840)
+a.card1("T001",6000)
+a.bank_AC1("Amex",7890456738)
+a.All_info()
+
 # this method is to take user input
 a = Credit_limit
 a.info(input("Customer id"),input("Enter name"))
